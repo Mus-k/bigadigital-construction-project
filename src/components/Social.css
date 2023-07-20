@@ -2,31 +2,57 @@
 .socialContainer{
     display: flex;
     width: 100%;
+    justify-content:center;
+   
+    
+}
+
+.socialNested{
+    display: flex;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     height: 35px;
     max-width: 1550px;
-    
 }
-
-.socialContainer .social-left{
+.socialContainer .socialNested .social-left{
     display: flex;
     gap: 25px;
 }
 
-.socialContainer .social-right{
+.socialContainer .socialNested .social-right{
     display: flex;
     gap: 25px;
 }
-.fa-solid{
+/* .fa-solid{
     margin: 5px;
+} */
+.fa-envelopeP, .fa-phoneP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
+.fa-building,
 .fa-solid, .fa-brands{
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
+.fa-building:hover,
 .fa-brands:hover, .fa-solid:hover{
     color: #00043c;
-    /* background-color: #808080; */
+    
     transform: scale(1.2);
+}
+
+@media screen and (min-width:1550px){
+    .socialNested{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        max-width: 1550px;
+    }
+    
 }

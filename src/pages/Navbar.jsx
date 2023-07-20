@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
-import { default as logo } from "../assets/image/logo.PNG";
+import { default as logo } from "../assets/icons/logo.png";
 export const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
@@ -13,7 +13,7 @@ export const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setSticky(window.scrollY > 200);
-      console.log(window.scroll);
+     
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -25,28 +25,31 @@ export const Navbar = () => {
       <header className={`${sticky ? "sticky" : ""}`}>
         <nav className="Navcontainer">
           <Link to="/">
-            <div className="logo">CityBuilder</div>
+            <div className="logo">
+              <img src={logo} alt="logo" width="100%"/>
+              CityBuilder
+            </div>
           </Link>
 
           <ul className="desktopMenu">
             <li>
-              <NavLink activeClassName="active" to="">Home</NavLink>
+              <NavLink activeclassname="active" to="">Home</NavLink>
            
             </li>
             <li>
-            <NavLink activeClassName="active" to="/about">About</NavLink>
+            <NavLink activeclassname="active" to="/about">About</NavLink>
             </li>
             <li>
-            <NavLink activeClassName="active" to="ourteam">Our Team</NavLink>
+            <NavLink activeclassname="active" to="ourteam">Our Team</NavLink>
             </li>
             <li>
-            <NavLink activeClassName="active" to="project">Project</NavLink>
+            <NavLink activeclassname="active" to="project">Project</NavLink>
             </li>
             <li>
-            <NavLink activeClassName="active" to="blog">Blog</NavLink>
+            <NavLink activeclassname="active" to="blog">Blog</NavLink>
             </li>
             <li>
-            <NavLink activeClassName="active" to="contact">Contact</NavLink>
+            <NavLink activeclassname="active" to="contact">Contact</NavLink>
             </li>
           </ul>
           <div

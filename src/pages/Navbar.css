@@ -5,6 +5,8 @@ header {
   transition: all 0.9s ease-in;
  display: flex;
  padding: 0px 100px;
+ justify-content: center;
+ 
 }
 
 header.sticky {
@@ -16,6 +18,7 @@ header.sticky {
 
 nav {
   width: 100%;
+  max-width: 1550px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,11 +53,16 @@ nav .desktopMenu {
   color: var(--text-eight);
 }
 
-.logo-div{
-  height: 70px;
-  width: 100px;
+.logo img{
+  height: 40px;
+  width: 50px;
+ 
 }
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   color: aliceblue;
   z-index: 100;
   font-size: 25px;
@@ -112,7 +120,7 @@ a {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  z-index: 98;
+  z-index: 200;
   background-color: #1f103f;
   padding-top: 60px;
   margin-top: 60px;

@@ -9,6 +9,8 @@
   --text-e:#ffffffe6;
   --text-bc:#00000cc;
   --footer-bg:#333333;
+  --pagesHeight:calc(100vh - 70px);
+  --pagesWidth: 100%;
 
 }
 *{
