@@ -1,0 +1,24 @@
+:root{
+  --nav-bg:#00043c;
+  --text-gray:#808080;
+  --text-yellow:#fdbe34;
+  --text-black:#000000;
+  --text-white:#ffffff;
+  --text-eight:#ffffff80;
+  --text-b:#ffffffb3;
+  --text-e:#ffffffe6;
+  --text-bc:#00000cc;
+  --footer-bg:#333333;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  color: var(--text-black);
+  font-family: 'Poppins', sans-serif;
+}

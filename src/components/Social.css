@@ -1,0 +1,32 @@
+
+.socialContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    max-width: 1550px;
+    
+}
+
+.socialContainer .social-left{
+    display: flex;
+    gap: 25px;
+}
+
+.socialContainer .social-right{
+    display: flex;
+    gap: 25px;
+}
+.fa-solid{
+    margin: 5px;
+}
+.fa-solid, .fa-brands{
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.fa-brands:hover, .fa-solid:hover{
+    color: #00043c;
+    /* background-color: #808080; */
+    transform: scale(1.2);
+}
