@@ -145,6 +145,7 @@ a {
   color: var(--text-white);
 }
 
+
 /* media querries */
 @media screen and (max-width: 1024px) {
   header {

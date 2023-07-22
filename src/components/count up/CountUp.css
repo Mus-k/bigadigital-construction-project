@@ -1,9 +1,10 @@
 .counters {
-  padding: 3em 2em;
-  background: var(--nav-bg);
+  padding: 1em 2em;
+  /* background: var(--nav-bg); */
+  
   color: var(--text-white);
   text-align: center;
-  margin-top: 30px;
+
 }
 .counters > div {
   max-width: 1100px;
@@ -12,15 +13,19 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 3em 2em;
 }
+.counterText{
+  color:var(--nav-bg);
+}
 .counter {
   position: relative;
 }
 .countNumber{
     font-size: 40px;
+    color: var(--text-yellow);
 }
 .counter:not(:last-child)::before {
   content: "";
-  background: var(--text-white);
+  background: var(--nav-bg);
   position: absolute;
   width: 2px;
   height: 3em;

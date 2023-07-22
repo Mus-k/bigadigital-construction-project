@@ -8,6 +8,9 @@ import Material from "../components/materials/Material";
 import Service from "../components/services/Service";
 import Mission from "../components/mission/Mission";
 import CountUpFunc from "../components/count up/CountUp";
+import Truck from "../components/infinitive truck/Truck";
+import Gallery from "../components/gallery/Gallery";
+import Client from "../components/clients-Say/Client";
 const Home = () => {
   return (
     <motion.div
@@ -17,10 +20,13 @@ const Home = () => {
       exit={{ opacity: 0 }}
     >
       <Slides />
-     <Material />
+      <CountUpFunc />
+      <Material />
       <Service />
-      <Mission/>
-      <CountUpFunc/>
+      <Mission />
+      <Truck />
+      <Gallery />
+      <Client/>
     </motion.div>
   );
 };

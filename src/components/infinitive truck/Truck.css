@@ -1,0 +1,104 @@
+.truck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: hidden;
+}
+
+.truckLeft img {
+  transform: rotateY(180deg);
+}
+.truckLeft {
+  max-width: 200px;
+
+  position: relative;
+  animation: mymove 9s infinite;
+}
+.animateDiv {
+  width: 100%;
+
+  position: relative;
+  justify-content: flex-start;
+}
+@keyframes mymove {
+  0% {
+    top: 0px;
+    left: 10px;
+  }
+  50% {
+    top: 0px;
+    left: 62%;
+  }
+  100% {
+    top: 0px;
+    left: 10px;
+  }
+}
+
+.animateRight {
+  width: 100%;
+  /* height: 200px; */
+  position: relative;
+  justify-content: flex-end;
+}
+.truckRight {
+  max-width: 250px;
+
+  z-index: 2;
+  position: relative;
+  animation: rightMove 9s infinite;
+  animation-delay: 4s;
+}
+
+@keyframes rightMove {
+  0% {
+    right: 0px;
+    top: 0px;
+  }
+  50% {
+    right: -50%;
+    top: 0px;
+  }
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .truckLeft {
+    max-width: 150px;
+  }
+  .truckRight {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .truckLeft {
+      max-width: 100px;
+    }
+    .truckRight {
+      max-width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .truckLeft {
+      max-width: 70px;
+    }
+    .truckRight {
+      max-width: 70px;
+    }
+  }
+
+  @media screen and (max-width: 330px) {
+    .truckLeft {
+      max-width: 50px;
+    }
+    .truckRight {
+      max-width: 50px;
+    }
+  }
