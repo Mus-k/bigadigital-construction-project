@@ -1,0 +1,58 @@
+.counters {
+  padding: 3em 2em;
+  background: var(--nav-bg);
+  color: var(--text-white);
+  text-align: center;
+  margin-top: 30px;
+}
+.counters > div {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em 2em;
+}
+.counter {
+  position: relative;
+}
+.countNumber{
+    font-size: 40px;
+}
+.counter:not(:last-child)::before {
+  content: "";
+  background: var(--text-white);
+  position: absolute;
+  width: 2px;
+  height: 3em;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -1em;
+}
+
+@media screen and (max-width: 900px) and (min-width: 502px) {
+  .counters > div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .counter:nth-child(2)::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 502px) {
+    .countNumber{
+        font-size: 23px;
+    }
+  .counters > div {
+    grid-template-columns: 1fr;
+    row-gap: 5em;
+  }
+  .counter:not(:last-child)::before {
+    width: 90%;
+    height: 2px;
+    top: initial;
+    right: initial;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

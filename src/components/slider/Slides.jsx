@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "./Slider";
 import Arrows from "./Arrows";
-import SliderData from "./SliderData";
+import SliderData from "../../api/SliderData";
 import "./Slider.css";
 import Dots from "./Dots";
 let len = SliderData.length - 1;

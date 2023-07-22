@@ -11,6 +11,7 @@
   --footer-bg:#333333;
   --pagesHeight:calc(100vh - 70px);
   --pagesWidth: 100%;
+  --text-blackC:#000000cc;
 
 }
 *{
@@ -23,4 +24,6 @@
 body {
   color: var(--text-black);
   font-family: 'Poppins', sans-serif;
+  position: relative;
+ 
 }

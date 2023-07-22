@@ -1,0 +1,122 @@
+.mission {
+    width: 100%;
+    max-width: 1550px;
+  display: flex;
+  gap: 20px;
+  padding: 0px 220px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  
+}
+
+.missionRight {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  flex: 1;
+}
+.missionTitle {
+  color: var(--text-yellow);
+  font-size: 16px;
+  margin: 14px 0px;
+}
+.rightTitle {
+  color: var(--text-blackC);
+  margin: 6px 0px;
+}
+.missionText {
+  font-size: 16px;
+  margin: 0px 0px 16px;
+  color: var(--text-gray);
+}
+
+.missionLeft{
+   max-width: 400px;
+}
+.missionLeft img {
+    height:auto;
+}
+
+.mLeft{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+
+}
+
+.accordionDisplay{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.missionBtn{
+    width: 150px;
+}
+.bottomText{
+    color: var(--text-gray);
+    margin: 0px 0px 16px;
+}
+
+@media screen and (max-width:1220px){
+    .mission {
+        width: 100%;
+        max-width: 1550px;
+      display: flex;
+      gap: 20px;
+      padding: 0px 150px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      
+    }
+}
+@media screen and (max-width:1030px){
+    .mission {
+        width: 100%;
+        max-width: 1550px;
+      display: flex;
+      gap: 20px;
+      padding: 0px 70px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      
+    }
+}
+
+@media screen and (max-width:900px){
+    .mission {
+        width: 100%;
+        max-width: 1550px;
+      display: flex;
+      gap: 20px;
+      padding: 0px 150px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      
+    }
+    .mLeft{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .mission {
+        width: 100%;
+        max-width: 1550px;
+      display: flex;
+      gap: 20px;
+      padding: 0px 50px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      
+    }}
