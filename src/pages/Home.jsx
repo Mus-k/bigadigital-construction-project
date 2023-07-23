@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { About } from "./About";
+
 import "./Home.css";
-import { Project } from "./Project";
 import Slides from "../components/slider/Slides";
 import Material from "../components/materials/Material";
 import Service from "../components/services/Service";
@@ -10,7 +9,10 @@ import Mission from "../components/mission/Mission";
 import CountUpFunc from "../components/count up/CountUp";
 import Truck from "../components/infinitive truck/Truck";
 import Gallery from "../components/gallery/Gallery";
-import Client from "../components/clients-Say/Client";
+import Testimonial from "../components/testimonialCarousel/Testimonial";
+import Blog from "../components/blog/Blog";
+import Footer from "./Footer";
+
 const Home = () => {
   return (
     <motion.div
@@ -26,7 +28,10 @@ const Home = () => {
       <Mission />
       <Truck />
       <Gallery />
-      <Client/>
+      <Testimonial />
+      <Blog />
+
+      <Footer />
     </motion.div>
   );
 };

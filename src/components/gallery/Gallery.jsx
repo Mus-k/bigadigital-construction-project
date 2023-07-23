@@ -1,6 +1,11 @@
 import React from "react";
 import "./Gallery.css";
-import { default as first } from "../../assets/images/project_img1.png";
+import { default as first } from "../../assets/image/portfolio-6.jpg";
+import { default as two } from "../../assets/image/portfolio-2.jpg";
+import { default as three } from "../../assets/image/portfolio-3.jpg";
+import { default as four } from "../../assets/image/portfolio-4.jpg";
+import { default as five } from "../../assets/image/portfolio-5.jpg";
+import { default as six } from "../../assets/image/portfolio-6.jpg";
 const Gallery = () => {
   return (
     <div className="containerGallery">
@@ -21,7 +26,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={first} alt="image" />
+            <img src={two} alt="image" />
           </div>
           <div className="contentBox">
             <div className="contentSelf">
@@ -33,7 +38,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={first} alt="image" />
+            <img src={three} alt="image" />
           </div>
           <div className="contentBox">
             <div className="contentSelf">
@@ -45,7 +50,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={first} alt="image" />
+            <img src={four} alt="image" />
           </div>
           <div className="contentBox">
             <div className="contentSelf">
@@ -57,7 +62,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={first} alt="image" />
+            <img src={five} alt="image" />
           </div>
           <div className="contentBox">
             <div className="contentSelf">
@@ -69,7 +74,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={first} alt="image" />
+            <img src={six} alt="image" />
           </div>
           <div className="contentBox">
             <div className="contentSelf">

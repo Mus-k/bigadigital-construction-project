@@ -12,7 +12,7 @@ const Service = () => {
             <img src={expert} alt="experts" width="100%" />
           </p>
         </div>
-        <div className="line">
+        <div className="lines">
           <h2 className="serviceTitle">Expert & Professional</h2>
           <p className="service-text">
             Separated they live in. A small river named Duden flows
@@ -27,7 +27,7 @@ const Service = () => {
             <img src={quality} alt="quality" width="100%" />
           </p>
         </div>
-        <div className="line">
+        <div className="lines">
           <h2 className="serviceTitle">High Quality Work</h2>
           <p className="service-text">
             Separated they live in. A small river named Duden flows
@@ -41,7 +41,7 @@ const Service = () => {
             <img className="hourImg" src={hours} alt="quality" width="100%" />
           </p>
         </div>
-        <div className="line">
+        <div className="lines">
           <h2 className="serviceTitle">24/7 Help Support</h2>
           <p className="service-text">
             Separated they live in. A small river named Duden flows

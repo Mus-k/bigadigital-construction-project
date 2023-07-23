@@ -39,9 +39,7 @@
     transition: all .5s ease-in-out;
 }
 .fa-building:hover,
-.fa-brands:hover, .fa-solid:hover{
-    color: #00043c;
-    
+.fa-brands:hover, .fa-solid:hover{  
     transform: scale(1.2);
 }
 

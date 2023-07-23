@@ -7,7 +7,7 @@ const AccordionComponent = () => {
 
   function tabs(TabsIndex) {
     setTabActive(TabsIndex);
-    console.log(TabsIndex);
+    
   }
   return (
     <div className="tabs-container">

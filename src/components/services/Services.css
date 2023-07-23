@@ -7,16 +7,19 @@
 }
 
 .service-nested {
+  width: 100%;
   display: flex;
   gap: 10px;
-  width: 390px;
+  max-width: 390px;
   padding: 16px;
 }
-.serviceTitle {
+.expert .lines .serviceTitle {
   margin: 8px;
 }
+
 .service-text {
   color: var(--text-eighty);
+  
 }
 
 .ser-imgDiv {
@@ -42,7 +45,7 @@
   background-color:var(--text-yellow) ;
   border-radius: 20px;
 }
-.line {
+.lines {
   line-height: 30px;
  
 }
@@ -81,7 +84,7 @@
   .service-text {
     color: var(--text-eighty);
   }
-  .line {
+  .lines {
     line-height: 30px;
    
   }
