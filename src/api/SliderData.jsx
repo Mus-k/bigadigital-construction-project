@@ -1,9 +1,9 @@
-import { default as firstMobile } from "../assets/image/mobile-first.jpg";
-import { default as firstlarge } from "../assets/image/x-desktop-first.jpg";
-import { default as secondMobile } from "../assets/image/mobile-second.jpg";
-import { default as secondlarge } from "../assets/image/x-desktop-second.jpg";
-import { default as thirdMobile } from "../assets/image/mobile-third.jpg";
-import { default as thirdlarge } from "../assets/image/x-desktop-third.jpg";
+import { default as firstMobile } from "../assets/images/mobile-first.jpg";
+import { default as firstlarge } from "../assets/images/x-desktop-first.jpg";
+import { default as secondMobile } from "../assets/images/mobile-second.jpg";
+import { default as secondlarge } from "../assets/images/x-desktop-second.jpg";
+import { default as thirdMobile } from "../assets/images/mobile-third.jpg";
+import { default as thirdlarge } from "../assets/images/x-desktop-third.jpg";
 
 
  const SliderData = [

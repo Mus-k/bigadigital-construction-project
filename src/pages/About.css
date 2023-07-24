@@ -1,7 +1,6 @@
-.about{
-    height: calc(100vh - 70px);
-width: 100%;
-position: relative;
-z-index: 2;
-background-color: cornflowerblue;
+.about {
+  height: calc(100vh - 70px);
+  width: 100%;
+  position: relative;
+  z-index: 2;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Truck.css";
-import { default as truck } from "../../assets/image/truck.png";
-import { default as machine } from "../../assets/image/jcb.png";
+import { default as truck } from "../../assets/images/truck.png";
+import { default as machine } from "../../assets/images/jcb.png";
 const Truck = () => {
   return (
     <div className="truck">

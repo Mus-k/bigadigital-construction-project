@@ -1,7 +1,7 @@
 import React from "react";
 import './Blog.css';
 import {default as calendar} from "../../assets/icons/schedule.png"
-import {default as blog1} from "../../assets/image/x-desktop-first.jpg"
+import {default as blog1} from "../../assets/images/x-desktop-first.jpg"
 const Blog = () => {
   return (
     <section className="blogMain">

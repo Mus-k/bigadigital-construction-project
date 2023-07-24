@@ -73,6 +73,7 @@ nav .desktopMenu {
 }
 .logo-span {
   z-index: 500;
+  text-transform: uppercase;
 }
 a {
   text-decoration: none;

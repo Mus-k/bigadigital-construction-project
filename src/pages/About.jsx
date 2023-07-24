@@ -7,8 +7,6 @@ export const About = () => {
     className='about'
     initial={{opacity:0}}
     animate={{opacity:1}}
-    exit={{opacity:0}}>About  <div className="home">
-
-    </div></motion.div>
+    exit={{opacity:0}}>About </motion.div>
   )
 }

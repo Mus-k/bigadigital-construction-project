@@ -1,0 +1,324 @@
+.contact {
+  position: relative;
+  width: 100%;
+  padding: 0px 10px 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: var(--text-yellow);
+  padding-bottom: 10px;
+}
+.contact .contact-Container {
+  width: 75%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.boxOne{
+    background-color: var(--nav-bg);
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    padding:5px 20px;
+    color: var(--text-white);
+   
+}
+.boxOne  .reachUs{
+font-size: 1.5em;
+margin: 4px 10px;
+  }
+
+  .boxInner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  .iconSpan{
+    background-color: var(--text-white);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+    .iconSpan img{
+        height: 25px;
+    width: 25px;
+    
+
+  }
+
+
+.boxTwo{
+    background-color: rgb(211, 215, 212);
+    grid-column: 1/4;
+    grid-row: 2/3;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.boxThree{
+    background-color:var(--text-yellow);
+    grid-column: 4/8;
+    grid-row: 1/3;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px 20px;
+}
+
+.sendMsg{
+    padding: 20px 20px 0px 20px;
+}
+.nestedBox{
+    width: 100%;
+    display: flex; 
+    gap: 8px;
+}
+.nestedBox div {
+width: 50%;
+}
+.nestedBox div input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 8px;
+}
+.sendBtn{
+    padding: 10px 8px;
+    width: 130px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+@media screen  and (max-width:1200px){
+    .contact .contact-Container {
+        width: 90%;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-auto-rows: minmax(150px, auto);
+      grid-gap: 20px;
+      padding: 10px;
+    }
+}
+
+@media screen  and (max-width:920px){
+   
+.boxOne{
+    background-color: var(--nav-bg);
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    padding:5px 5px;
+    color: var(--text-white);
+   
+}
+.boxOne  .reachUs{
+font-size: 1em;
+margin: 4px 2px;
+  }
+
+  .boxInner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  .iconSpan{
+    background-color: var(--text-white);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 4px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+    .iconSpan img{
+        height: 20px;
+    width: 20px;
+    
+
+  }
+
+
+.boxTwo{
+   
+    grid-column: 5/8;
+    grid-row: 2/3;
+    padding: 0;
+    margin: 0;
+}
+
+.boxThree{
+    background-color:var(--text-yellow);
+    grid-column: 1/8;
+    grid-row: 1/2;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 20px 20px;
+}
+
+.sendMsg{
+    padding: 20px 20px 0px 20px;
+}
+.nestedBox{
+    width: 100%;
+    display: flex; 
+    gap: 8px;
+}
+.nestedBox div {
+width: 50%;
+}
+.nestedBox div input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 8px;
+}
+.sendBtn{
+    padding: 10px 8px;
+    width: 130px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 0px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: var(--text-yellow);
+    padding-bottom: 20px;
+  }
+
+}
+
+@media screen and (max-width:600px){
+    .boxOne{
+        background-color: var(--nav-bg);
+        grid-column: 1/8;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        padding:5px 5px;
+        color: var(--text-white);
+       
+    } 
+    .boxTwo{
+     
+        grid-column: 1/8;
+        grid-row: 3/4;
+        padding: 0;
+    margin: 0;
+    }
+    .contact {
+        position: relative;
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .contact .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        color: var(--text-yellow);
+        padding-bottom: 0px;
+      }
+}
+
+
+@media screen and (max-width:350px){
+    .boxTwo{
+      
+        grid-column: 1/8;
+        grid-row: 3/4;
+        margin-bottom: 10px;
+    }
+
+    .reachUs{
+        text-align: center;
+    }
+    .boxInner{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .contact .contact-Container {
+        padding: 0px;
+        margin: 0;
+        width: 100%;}
+        .contact {
+            position: relative;
+            width: 100%;
+            padding: 0px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+}

@@ -8,7 +8,6 @@ import { AboutRoute } from "../routes/AboutRoute";
 import { BlogRoute } from "../routes/BlogRoute";
 import { ContactRoute } from "../routes/ContactRoute";
 import { ProjectRoute } from "../routes/ProjectRoute";
-import { OurTeamRoute } from "../routes/OurTeamRoute";
 
 export default function AnimateRoute() {
   const location= useLocation();
@@ -22,7 +21,7 @@ export default function AnimateRoute() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutRoute />} />
-        <Route path="/ourteam" element={<OurTeamRoute />} />
+       
         <Route path="/project" element={<ProjectRoute />} />
         <Route path="/blog" element={<BlogRoute />} />
         <Route path="/contact" element={<ContactRoute />} />

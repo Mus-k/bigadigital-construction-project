@@ -6,6 +6,7 @@ import { default as hours } from "../../assets/icons/24-hours-support.png";
 const Service = () => {
   return (
     <div className="service">
+      <div className="serviceContainer">
       <div className="service-nested expert">
         <div className="ser-imgDiv ">
           <p>
@@ -15,7 +16,7 @@ const Service = () => {
         <div className="lines">
           <h2 className="serviceTitle">Expert & Professional</h2>
           <p className="service-text">
-            Separated they live in. A small river named Duden flows
+          High-quality work, demonstrating with experts and dedication to excellence throughout the project.
           </p>
         </div>
       </div>
@@ -30,7 +31,7 @@ const Service = () => {
         <div className="lines">
           <h2 className="serviceTitle">High Quality Work</h2>
           <p className="service-text">
-            Separated they live in. A small river named Duden flows
+          High-quality work, demonstrating with experts and dedication to excellence throughout the project.
           </p>
         </div>
       </div>
@@ -44,9 +45,10 @@ const Service = () => {
         <div className="lines">
           <h2 className="serviceTitle">24/7 Help Support</h2>
           <p className="service-text">
-            Separated they live in. A small river named Duden flows
+          Our company provides 24/7 help and support services, ensuring assistance is readily available to our customers.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ import Gallery from "../components/gallery/Gallery";
 import Testimonial from "../components/testimonialCarousel/Testimonial";
 import Blog from "../components/blog/Blog";
 import Footer from "./Footer";
+import { Contact } from "./Contact";
 
 const Home = () => {
   return (
@@ -30,7 +31,7 @@ const Home = () => {
       <Gallery />
       <Testimonial />
       <Blog />
-
+      <Contact />
       <Footer />
     </motion.div>
   );

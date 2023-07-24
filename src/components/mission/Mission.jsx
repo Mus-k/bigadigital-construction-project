@@ -19,7 +19,7 @@ const Mission = () => {
           Vokalia and Consonantia
         </p>
         <div className="accordionDisplay">
-            <AccordionComponent/>
+          <AccordionComponent />
         </div>
       </div>
     </div>

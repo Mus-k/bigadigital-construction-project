@@ -1,0 +1,40 @@
+
+.titleRoute{
+    font-size: 5ch;
+    color: var(--text-white);
+    text-shadow: 0 0 5px black;
+}
+
+.route{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: var(--text-white);
+    padding: 12px;
+    margin-bottom: 10px;
+}
+ .topInfo{
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+ } 
+
+ .bottomText{
+    display: flex;
+  
+    justify-content: center;
+    align-items:center;
+ }
+ .arrowImg img{
+    width: 50px;
+    height: 15px;
+   margin-top: 8px;
+ }
+
+ .activeRoute{
+    color: var(--text-yellow);
+ }
