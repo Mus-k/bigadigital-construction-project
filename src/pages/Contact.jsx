@@ -3,6 +3,7 @@ import "./Contact.css";
 import { default as location } from "../assets/icons/location.png";
 import { default as email } from "../assets/icons/mail.png";
 import { default as facebook } from "../assets/icons/facebook-logo.png";
+
 import Map from "../components/map/Map";
 export const Contact = () => {
   return (
@@ -74,6 +75,7 @@ export const Contact = () => {
           </form>
         </div>
       </div>
+    
     </section>
   );
 };

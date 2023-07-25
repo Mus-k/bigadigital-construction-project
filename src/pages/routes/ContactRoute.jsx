@@ -22,7 +22,7 @@ export const ContactRoute = () => {
         </div>
       </div>
       <Contact />
-      <Footer />
+     <Footer />
     </motion.div>
   );
 };

@@ -1,7 +1,8 @@
 .contact {
+  margin-bottom: 100px;
   position: relative;
   width: 100%;
-  padding: 0px 10px 30px 10px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,6 +124,11 @@ width: 50%;
 
 
 @media screen  and (max-width:1200px){
+
+  .contact {
+    margin-bottom: 50px;
+
+  }
     .contact .contact-Container {
         width: 90%;
       display: grid;
@@ -135,6 +141,10 @@ width: 50%;
 
 @media screen  and (max-width:920px){
    
+  .contact {
+    margin-bottom: 40px;
+
+  }
 .boxOne{
     background-color: var(--nav-bg);
     grid-column: 1/5;
@@ -250,6 +260,11 @@ width: 50%;
 }
 
 @media screen and (max-width:600px){
+  
+  .contact {
+    margin-bottom: 20px;
+
+  }
     .boxOne{
         background-color: var(--nav-bg);
         grid-column: 1/8;
@@ -321,4 +336,12 @@ width: 50%;
             align-items: center;
           }
 
+}
+
+@media screen and (min-width:2000px){
+  
+  .contact {
+    margin: 180px 0px;
+
+  }
 }

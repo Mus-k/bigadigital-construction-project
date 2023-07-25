@@ -74,6 +74,7 @@ nav .desktopMenu {
 }
 .logo-span {
   z-index: 500;
+  text-transform:uppercase;
 }
 a {
   text-decoration: none;
@@ -125,7 +126,8 @@ a {
   min-height: 100vh;
   display: flex;
   z-index: 200;
-  background-color: #1f103f;
+  background-color: rgb(33, 32, 34);
+  /* background-color: rgb(47, 46, 49); */
   padding-top: 140px;
 
   transition: all 0.4s ease-in-out;

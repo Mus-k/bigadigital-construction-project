@@ -1,5 +1,14 @@
-.blog{
-    height: calc(100vh - 70px);
-    width: 100%;
-    background-color: rgb(177, 21, 183);
-    }
+.blog {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainList {
+  width: 1350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

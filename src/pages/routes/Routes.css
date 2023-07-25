@@ -1,4 +1,9 @@
-
+.bloRoute
+{
+  
+   height: calc(100vh - 103px);
+ 
+}
 .titleRoute{
     font-size: 5ch;
     color: var(--text-white);
@@ -37,4 +42,33 @@
 
  .activeRoute{
     color: var(--text-yellow);
+ }
+
+ @media screen and (max-width:1200px){
+   
+.route{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20vh;
+   background-color: var(--text-white);
+   padding-left: 60px;
+   margin-bottom: 10px;
+}
+.topInformation{
+   width: 1050px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+} 
+ }
+
+ @media screen and (max-width:780px){
+   .titleRoute{
+      font-size: 3ch;
+      color: var(--text-white);
+      text-shadow: 0 0 5px black;
+  }
  }

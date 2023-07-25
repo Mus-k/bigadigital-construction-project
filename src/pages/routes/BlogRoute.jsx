@@ -3,6 +3,7 @@ import './Routes.css'
 import { motion } from "framer-motion";
 import { Blog } from '../Blog'
 import {default as arrow} from "../../assets/icons/right-arrow.png"
+import Footer from '../Footer';
 export const BlogRoute = () => {
   return (
     <motion.div
@@ -21,6 +22,7 @@ export const BlogRoute = () => {
         </div>
       </div>
       <Blog/>
+      <Footer/>
     </motion.div>
   )
 }

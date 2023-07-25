@@ -18,7 +18,7 @@
 
 .expertMainTitle {
   margin-bottom: 20px;
-  font-size: 35px;
+  font-size: 26px;
   text-transform: uppercase;
 }
 .expertName {
@@ -30,7 +30,7 @@
 .expertCard {
   position: relative;
   max-width: 320px;
-  background: rgb(9, 174, 239);
+  background: var(--nav-bg);
   box-shadow: -20px 0 10px -20px rgba(0,0,0,0.45) inset, 20px 0 10px -20px rgba(0,0,0,0.45) inset;
 }
 
@@ -52,7 +52,7 @@
   position: absolute;
   left: 30%;
   top: 59%;
-  background: rgb(9, 174, 239);
+  background:var(--nav-bg);
 }
 
 .expertLogo {
@@ -62,7 +62,7 @@
   width: 30px;
   height: 30px;
   text-align: center;
-  background-color: yellow;
+  background-color:var(--text-yellow);
 }
 .logoDiv .expertLogo img {
   width: 20px;

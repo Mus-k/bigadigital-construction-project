@@ -40,6 +40,7 @@ const Map = () => {
           style={{ border: 0 }}
           allowfullscreen=""
           loading="lazy"
+          title="google live map"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       )}
