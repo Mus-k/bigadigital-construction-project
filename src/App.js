@@ -10,7 +10,7 @@ export default function App() {
       {loading ? (
         <Loader loading={loading} setLoading={setLoading} />
       ) : (
-        <AnimateRoute />
+        <AnimateRoute/>
       )}
     </div>
   );

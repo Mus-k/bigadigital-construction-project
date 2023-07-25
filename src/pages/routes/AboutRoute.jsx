@@ -6,13 +6,18 @@ import Gallery from "../../components/gallery/Gallery";
 import CountUpFunc from "../../components/count up/CountUp";
 import Testimonial from "../../components/testimonialCarousel/Testimonial";
 import Footer from "../Footer";
+import { motion } from "framer-motion";
 export const AboutRoute = () => {
   return (
-    <div className="aboutRoute">
+    <motion.div
+    className="aboutRoute"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }} >
 
       {/* all top information use  the same css style */}
       <div className="route">
-      <div className="topInfo">
+      <div className="topInformation">
         <h1 className="titleRoute">About</h1>
         <p className="bottomText">
           Home <span className="arrowImg"><img src={arrow} alt="Arrow" width="100%"/></span>
@@ -27,6 +32,6 @@ export const AboutRoute = () => {
       <Gallery />
       <Footer />
       {/* <About/> */}
-    </div>
+    </motion.div>
   );
 };

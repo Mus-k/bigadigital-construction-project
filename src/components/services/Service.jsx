@@ -9,7 +9,7 @@ const Service = () => {
       <div className="serviceContainer">
       <div className="service-nested expert">
         <div className="ser-imgDiv ">
-          <p>
+          <p className="serviceImgDiv">
             <img src={expert} alt="experts" width="100%" />
           </p>
         </div>
@@ -24,7 +24,7 @@ const Service = () => {
       {/*  */}
       <div className="service-nested quality">
         <div className="ser-imgDiv">
-          <p>
+          <p className="serviceImgDiv">
             <img src={quality} alt="quality" width="100%" />
           </p>
         </div>
@@ -38,7 +38,7 @@ const Service = () => {
       {/*  */}
       <div className="service-nested hours">
         <div className="ser-imgDiv">
-          <p>
+          <p className="serviceImgDiv">
             <img className="hourImg" src={hours} alt="quality" width="100%" />
           </p>
         </div>

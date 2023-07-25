@@ -1,5 +1,5 @@
 :root {
-  --nav-bg: #00043c;
+  --nav-bg:#1e2225;
   --text-gray: #808080;
   --text-yellow: #fdbe34;
   --text-black: #000000;
@@ -13,6 +13,8 @@
   --pagesWidth: 100%;
   --text-blackC: #000000cc;
 }
+
+/*  #00043c */
 * {
   margin: 0;
   padding: 0;
