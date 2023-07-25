@@ -92,7 +92,7 @@
         position: absolute;
         left: 28%;
         top: 58%;
-        background: rgb(9, 174, 239);
+     
       }
     .expertMainTitle {
         margin-bottom: 20px;
@@ -111,7 +111,7 @@
     .expertCard {
         position: relative;
         max-width: 260px;
-        background: rgb(9, 174, 239);
+       
       }
       .expert {
         width: 100%;
@@ -129,7 +129,7 @@
         position: absolute;
         left: 20%;
         top: 53%;
-        background: rgb(9, 174, 239);
+      
       }
       
 }
@@ -143,7 +143,7 @@
         position: absolute;
         left: 30%;
         top: 30%;
-        background: rgb(9, 174, 239);
+     
       }
 }
 
