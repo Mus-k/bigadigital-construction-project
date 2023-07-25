@@ -20,7 +20,7 @@ export default function AnimateRoute() {
         <Social />
       </div>
       <Navbar />
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutRoute />} />

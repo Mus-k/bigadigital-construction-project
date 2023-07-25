@@ -7,7 +7,7 @@ const Mission = () => {
     <div className="mission">
       <div className="mLeft">
         <div className="missionLeft">
-          <img src={missionImg} alt="3d image" width="100%" />
+          <img src={missionImg} alt="3d project" width="100%" />
         </div>
       </div>
       <div className="missionRight">

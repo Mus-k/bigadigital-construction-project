@@ -14,7 +14,7 @@ const Gallery = () => {
       <div className="gallery">
         <div className="card">
           <div className="imgBox">
-            <img src={first} alt="image" />
+            <img src={first} alt="project One" />
           </div>
           <div className="bottomConten">
             <h3 className="bottomTitle">Residential Towers </h3>
@@ -30,7 +30,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={two} alt="image" />
+            <img src={two} alt="second project" />
           </div>
           <div className="bottomConten">
             <h3 className="bottomTitle">Parking</h3>
@@ -46,7 +46,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={three} alt="image" />
+            <img src={three} alt="project" />
           </div>
           <div className="bottomConten">
             <h3 className="bottomTitle">Sustainable Design </h3>
@@ -62,7 +62,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={four} alt="image" />
+            <img src={four} alt="project four" />
           </div>
           <div className="bottomConten">
             <h3 className="bottomTitle">Green Spaces </h3>
@@ -78,7 +78,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={five} alt="image" />
+            <img src={five} alt="project five" />
           </div>
           <div className="bottomConten">
             <h3 className="bottomTitle">Recreational Facilities </h3>
@@ -94,7 +94,7 @@ const Gallery = () => {
         {/*  */}
         <div className="card">
           <div className="imgBox">
-            <img src={six} alt="image" />
+            <img src={six} alt="project six" />
           </div>
           <div className="bottomConten">
             <h3 className="bottomTitle">Smart Technology </h3>

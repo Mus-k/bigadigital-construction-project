@@ -39,9 +39,7 @@ export const Navbar = () => {
             <li>
             <NavLink activeclassname="active" to="/about">About</NavLink>
             </li>
-            {/* <li>
-            <NavLink activeclassname="active" to="ourteam">Our Team</NavLink>
-            </li> */}
+           
             <li>
             <NavLink activeclassname="active" to="project">Project</NavLink>
             </li>
@@ -70,9 +68,7 @@ export const Navbar = () => {
           <li onClick={menuOpen}>
             <Link to="/about">About</Link>
           </li>
-          {/* <li onClick={menuOpen}>
-            <Link to="ourteam">Our Team</Link>
-          </li> */}
+       
           <li onClick={menuOpen}>
             <Link to="project">Project</Link>
           </li>

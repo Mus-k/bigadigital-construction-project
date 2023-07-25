@@ -1,5 +1,4 @@
 import React from "react";
-import { default as profile } from "../../../assets/image-testimonial/freestocks.jpg";
 import TestiArrows from "./TestiArrows";
 
 const TestiContent = ({ indexActive, slideData, previousSlide, nextSlide }) => {

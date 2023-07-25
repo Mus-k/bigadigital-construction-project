@@ -8,7 +8,7 @@ export const Loader = ({loading, setLoading}) => {
   setTimeout(() => {
     setLoading(false)
   },1000);
-  }, [])
+  }, [loading, setLoading])
   return (
     <div className='loaderContainer'>
 
