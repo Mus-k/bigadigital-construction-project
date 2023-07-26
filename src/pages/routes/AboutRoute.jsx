@@ -3,7 +3,6 @@ import './Routes.css'
 import {default as arrow} from "../../assets/icons/right-arrow.png"
 import Mission from "../../components/mission/Mission";
 import Gallery from "../../components/gallery/Gallery";
-import CountUpFunc from "../../components/count up/CountUp";
 import Testimonial from "../../components/testimonialCarousel/Testimonial";
 import Footer from "../Footer";
 import { motion } from "framer-motion";
@@ -27,7 +26,7 @@ export const AboutRoute = () => {
         </div>
       </div>
       <Mission />
-      <CountUpFunc />
+    
       <Testimonial />
       <Gallery />
       <Footer />
