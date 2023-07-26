@@ -14,8 +14,10 @@ const IntroSlider = () => {
         autoPlay={true}
         infiniteLoop={true}
         showThumbs={false}
+        interval={5000}
         showStatus={false}
         showIndicators={false}
+        stopOnHover={true}
         renderArrowPrev={(clickHandler, hasPrev) => (
           <div onClick={clickHandler} className="arrowPrev">
             <i className="fa">&#xf0d9;</i>

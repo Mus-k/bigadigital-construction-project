@@ -1,7 +1,19 @@
-
-.home{
+.home {
   position: relative;
-    height: calc(100vh - 70px);
-    width: 100%;
-   
-    }
+  height: calc(100vh - 70px);
+  width: 100%;
+}
+
+/* displaying landing slider to none on mobile mode */
+
+.landingMobileMode {
+  display: none;
+}
+@media screen and (max-width: 690px) {
+  .sliderDesktopMode {
+    display: none;
+  }
+  .landingMobileMode {
+    display: block;
+  }
+}

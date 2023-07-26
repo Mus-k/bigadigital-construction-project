@@ -14,6 +14,7 @@ import Footer from "./Footer";
 import { Contact } from "./Contact";
 import Expert from "../components/expert/Expert";
 import IntroSlider from "../components/introSlider/IntroSlider";
+import Intro from "../components/landingPage/Intro";
 
 const Home = () => {
   return (
@@ -23,11 +24,20 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      {/* <Slides /> */}
-    <IntroSlider/>
-      {/* <CountUpFunc /> */}
-      <h2 className="ourServices" style={{textAlign:"center", paddingTop:"24px"}}>Our Services</h2>
-     
+      <div className="sliderDesktopMode">
+        <IntroSlider />
+      </div>
+      <div className="landingMobileMode">
+        <Intro />
+      </div>
+
+      <h2
+        className="ourServices"
+        style={{ textAlign: "center", paddingTop: "24px" }}
+      >
+        Our Services
+      </h2>
+
       <Material />
       <Service />
       <Mission />

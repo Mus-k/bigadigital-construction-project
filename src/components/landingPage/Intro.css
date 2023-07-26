@@ -1,0 +1,148 @@
+.landingPage {
+  height: calc(100vh - 70px);
+  background: url("../../assets/images/mobile-second.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  resize: both;
+  z-index: 1;
+  padding-bottom: 70px;
+}
+
+.landing-container {
+  padding-left: 50px;
+  padding-right: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.landingTitle {
+  color: #ffff;
+  font-size: 28px;
+  padding: 10px 0px;
+  font-weight: 500px;
+}
+
+.landingText {
+  font-size: 20px;
+  padding: 10px 0px;
+  color: #ffff;
+ line-height: 26px;
+  font-family: "Robot" sans-serif;
+}
+
+.landingBtn {
+  padding: 10px 16px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 130px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.landingBtn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+.landingBtn:hover{
+    background-color: var(--nav-bg);
+    color: #ffff;
+}
+.landingBtn:hover  a {
+    color: #ffff;
+}
+.better{
+    position: relative;
+    z-index: 10;  
+    margin: 0px 6px;
+}
+.highlight {
+  color: var(--text-yellow);
+  font-weight: 400;
+  position: relative;
+  z-index: 10;
+  margin-left: 6px;
+}
+ .highlight::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background: var(--nav-bg);
+}
+
+
+.better::after{
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background: var(--text-yellow);
+  }
+@media screen and (max-width: 380px) {
+  .landing-container {
+    padding-left: 50px;
+    padding-right: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 120px;
+    flex-direction: column;
+  }
+  .landingTitle {
+    color: #ffff;
+    font-size: 28px;
+    padding: 10px 0px;
+    font-weight: 500px;
+    line-height: 29px;
+  }
+}
+
+@media screen  and (max-width:358px){
+    .landingTitle {
+        color: #ffff;
+        font-size: 20px;
+        padding: 10px 0px;
+        font-weight: 500px;
+        line-height: 29px;
+      }
+      
+.landingText {
+    font-size: 15px;
+    padding: 10px 0px;
+    color: #ffff;
+   line-height: 26px;
+    font-family: "Robot" sans-serif;
+  }
+  
+.landingBtn {
+    padding: 10px 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    width: 110px;
+  }
+  .landingPage {
+padding-bottom: 50px;
+  }
+}
