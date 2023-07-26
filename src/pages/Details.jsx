@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Details.css";
+import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import NotFound from "../components/notFound/NotFound";
 import detailsData from "../api/BlogDetailsData";
@@ -22,7 +23,23 @@ const Details = () => {
           <span>&#8592;</span>Go Back
         </Link>
         {blog ? (
-          <div className="blog-container">
+          <motion.div
+            className="blog-container"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: 0.2, duration: 1.1 }}
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: 100,
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
+            }}
+          >
             <h3 className="blog-Title">{blog.title}</h3>
             <p className="published">published: {blog.date}</p>
             <img
@@ -35,12 +52,12 @@ const Details = () => {
             <p className="blog-ext idText">{blog.exterior}</p>
             <p className="blog-interior idText">{blog.interior}</p>
             <p className="blog-sum idText">{blog.summary}</p>
-          </div>
+          </motion.div>
         ) : (
           <NotFound />
         )}
       </div>
-{/* footer */}
+      {/* footer */}
       <footer className="footerContainer">
         <div className="footer">
           <div className="grid-item1">
