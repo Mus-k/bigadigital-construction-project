@@ -5,9 +5,25 @@ import { default as email } from "../assets/icons/mail.png";
 import { default as facebook } from "../assets/icons/facebook-logo.png";
 
 import Map from "../components/map/Map";
+import { motion } from "framer-motion";
 export const Contact = () => {
   return (
-    <section className="contact">
+    <motion.section
+    className="contact"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ delay: 0.2, duration: 1.1 }}
+    variants={{
+      hidden: {
+        opacity: 0,
+        y: 100,
+      },
+      visible: {
+        opacity: 1,
+        y: 0,
+      },
+    }}>
      
         <h2  className="title">Contact Us</h2>
       
@@ -76,7 +92,7 @@ export const Contact = () => {
         </div>
       </div>
     
-    </section>
+    </motion.section>
   );
 };
 

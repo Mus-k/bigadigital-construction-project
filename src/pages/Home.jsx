@@ -15,7 +15,6 @@ import Footer from "./Footer";
 import { Contact } from "./Contact";
 import Expert from "../components/expert/Expert";
 
-
 const Home = () => {
   return (
     <motion.div
@@ -25,8 +24,9 @@ const Home = () => {
       exit={{ opacity: 0 }}
     >
       <Slides />
+    
       <CountUpFunc />
-     
+
       <Material />
       <Service />
       <Mission />
@@ -34,7 +34,7 @@ const Home = () => {
       <Gallery />
       <Testimonial />
       <Blog />
-      <Expert/>
+      <Expert />
       <Contact />
       <Footer />
     </motion.div>

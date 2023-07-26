@@ -2,6 +2,7 @@ import React from "react";
 import "./BlogList.css";
 import { default as rightArrow } from "../../assets/icons/right-arrow-to-details.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 const BlogList = ({ blog }) => {
   const {
     id,
@@ -20,7 +21,21 @@ const BlogList = ({ blog }) => {
     });
   }
   return (
-    <div className="blogList">
+    <motion.div
+    className="blogList"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+    transition={{ delay: 0.2, duration: 1.1 }}
+    variants={{
+      hidden: {
+        opacity: 0,
+        y: 100,
+      },
+      visible: {
+        opacity: 1,
+        y: 0,}
+    }}>
       <img
         className="blog-images"
         src={img1}
@@ -51,7 +66,7 @@ const BlogList = ({ blog }) => {
           </Link>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
