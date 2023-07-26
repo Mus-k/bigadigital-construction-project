@@ -3,24 +3,16 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  //const [submit, setSubmit] = useState(false);
   const [input, setInput] = useState("");
-  const [invalid, setInvalid] = useState(false);
 
-function handleChange(e){
-  setInput(e.target.value)
-  if(e.target.value){
-    setInvalid(false)
+  function handleChange(e) {
+    setInput(e.target.value);
   }
-}
   function submitFunc() {
-if(input==="")
-{
-setInvalid(true)
-} else {
-  setInput("")
-}
-  
+    if (input === "") {
+      return;
+    }
+    setInput("")
   }
 
   return (
@@ -96,11 +88,12 @@ setInvalid(true)
               className="subscribe"
               placeholder="Enter Your Email"
               onChange={handleChange}
+              required
             />
             <button className="subscribeBtn" onClick={submitFunc}>
               Subscribe
             </button>
-            <p style={{color:"red"}}>{invalid? "required":""}</p>
+          
           </div>
         </div>
       </div>

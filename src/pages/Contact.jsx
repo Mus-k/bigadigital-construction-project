@@ -32,7 +32,7 @@ export const Contact = () => {
       !info.lname ||
       !info.number
     ) {
-      alert("All field is to be fill");
+      alert("All fields are required");
       return;
     }
     console.log(info.fname);
@@ -120,6 +120,7 @@ export const Contact = () => {
                   type="email"
                   placeholder="Enter your email"
                   className="email"
+                  required
                   name="email"
                   value={info.email}
                   onChange={handleChange}
