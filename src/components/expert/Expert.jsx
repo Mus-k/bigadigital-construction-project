@@ -1,16 +1,66 @@
 import './Expert.css'
-import {default as expertOne} from '../../assets/expert-images/pexels-thisisengineering-3862371.jpg'
+import {motion}  from "framer-motion"
 import {default as link} from '../../assets/icons/linkedin.png'
 import {default as face} from '../../assets/icons/facebook-logo.png'
 import {default as insta} from '../../assets/icons/instagram.png'
 import {default as twit} from '../../assets/icons/twitter.png'
+import expertData from '../../api/ExpertData'
 const Expert = () => {
   return (
     <section className="expert">
-      <h4 className='expertMainTitle'>Meet out expert</h4>
+      <h4 className='expertMainTitle'>Meet out experts</h4>
       <div className="expertContainer">
-        {/* first */}
-        <div className="expertCard">
+     {expertData && expertData.map(info=>(
+ <motion.div
+ className="expertCard"
+ initial="hidden"
+ whileInView="visible"
+ viewport={{ once: true, amount: 0.2 }}
+ transition={{ delay: 0.2, duration: 1.1 }}
+ variants={{
+   hidden: {
+     opacity: 0,
+     y: 100,
+   },
+   visible: {
+     opacity: 1,
+     y: 0,
+   },
+ }} >
+ <img src={info.image} alt="" width="100%" />
+
+ <div className="expertInfo">
+   <h4 className='expertName'>{info.name}</h4>
+   <p className='expertTitle'>{info.title}</p>
+ </div>
+ <div className="logoDiv">
+   <p className="expertLogo"><img src={link} alt="linkedin" width="100%"/></p>
+   <p  className="expertLogo"><img src={twit} alt="twitter" width="100%"/></p>
+   <p  className="expertLogo"><img src={face} alt="facebook" width="100%"/></p>
+   <p  className="expertLogo"><img src={insta} alt="instagram" width="100%"/></p>
+  
+ </div>
+ </motion.div>
+
+     ))}
+       
+         
+
+          {/* <div className="expertCard">
+          <img src={expertOne} alt="" width="100%" />
+
+          <div className="expertInfo">
+            <h4 className='expertName'>Dr. John Doe</h4>
+            <p className='expertTitle'>surgeon name</p>
+          </div>
+          <div className="logoDiv">
+            <p className="expertLogo"><img src={link} alt="linkedin" width="100%"/></p>
+            <p  className="expertLogo"><img src={twit} alt="twitter" width="100%"/></p>
+            <p  className="expertLogo"><img src={face} alt="facebook" width="100%"/></p>
+            <p  className="expertLogo"><img src={insta} alt="instagram" width="100%"/></p>
+           
+          </div>
+          </div>  <div className="expertCard">
           <img src={expertOne} alt="" width="100%" />
 
           <div className="expertInfo">
@@ -25,7 +75,23 @@ const Expert = () => {
            
           </div>
           </div>
-          {/* second */}
+       
+          <div className="expertCard">
+          <img src={expertOne} alt="" width="100%" />
+
+          <div className="expertInfo">
+            <h4 className='expertName'>Dr. John Doe</h4>
+            <p className='expertTitle'>surgeon name</p>
+          </div>
+          <div className="logoDiv">
+            <p className="expertLogo"><img src={link} alt="linkedin" width="100%"/></p>
+            <p  className="expertLogo"><img src={twit} alt="twitter" width="100%"/></p>
+            <p  className="expertLogo"><img src={face} alt="facebook" width="100%"/></p>
+            <p  className="expertLogo"><img src={insta} alt="instagram" width="100%"/></p>
+           
+          </div>
+          </div>
+        
 
           <div className="expertCard">
           <img src={expertOne} alt="" width="100%" />
@@ -42,7 +108,7 @@ const Expert = () => {
            
           </div>
           </div>
-          {/* third */}
+         
           <div className="expertCard">
           <img src={expertOne} alt="" width="100%" />
 
@@ -57,56 +123,7 @@ const Expert = () => {
             <p  className="expertLogo"><img src={insta} alt="instagram" width="100%"/></p>
            
           </div>
-          </div>
-          {/* fourth */}
-          <div className="expertCard">
-          <img src={expertOne} alt="" width="100%" />
-
-          <div className="expertInfo">
-            <h4 className='expertName'>Dr. John Doe</h4>
-            <p className='expertTitle'>surgeon name</p>
-          </div>
-          <div className="logoDiv">
-            <p className="expertLogo"><img src={link} alt="linkedin" width="100%"/></p>
-            <p  className="expertLogo"><img src={twit} alt="twitter" width="100%"/></p>
-            <p  className="expertLogo"><img src={face} alt="facebook" width="100%"/></p>
-            <p  className="expertLogo"><img src={insta} alt="instagram" width="100%"/></p>
-           
-          </div>
-          </div>
-          {/* fifth */}
-
-          <div className="expertCard">
-          <img src={expertOne} alt="" width="100%" />
-
-          <div className="expertInfo">
-            <h4 className='expertName'>Dr. John Doe</h4>
-            <p className='expertTitle'>surgeon name</p>
-          </div>
-          <div className="logoDiv">
-            <p className="expertLogo"><img src={link} alt="linkedin" width="100%"/></p>
-            <p  className="expertLogo"><img src={twit} alt="twitter" width="100%"/></p>
-            <p  className="expertLogo"><img src={face} alt="facebook" width="100%"/></p>
-            <p  className="expertLogo"><img src={insta} alt="instagram" width="100%"/></p>
-           
-          </div>
-          </div>
-          {/* sixth */}
-          <div className="expertCard">
-          <img src={expertOne} alt="" width="100%" />
-
-          <div className="expertInfo">
-            <h4 className='expertName'>Dr. John Doe</h4>
-            <p className='expertTitle'>surgeon name</p>
-          </div>
-          <div className="logoDiv">
-            <p className="expertLogo"><img src={link} alt="linkedin" width="100%"/></p>
-            <p  className="expertLogo"><img src={twit} alt="twitter" width="100%"/></p>
-            <p  className="expertLogo"><img src={face} alt="facebook" width="100%"/></p>
-            <p  className="expertLogo"><img src={insta} alt="instagram" width="100%"/></p>
-           
-          </div>
-          </div>
+          </div> */}
       </div>
     </section>
   );

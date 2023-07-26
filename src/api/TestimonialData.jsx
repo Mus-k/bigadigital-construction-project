@@ -20,7 +20,7 @@ import { default as ahmed} from "../assets/image-testimonial/ahmed.jpg";
         name:"Isabella",
         title: "Manager of Michael Bank",
         message: "Their customer support is wonderful. Their team is brilliant. and I'm amazed by how easy and effortless it was to work with them.",
-        color:"#D8C4B6",
+        color:"#ddd",
       },
       {
         id: 3,
@@ -28,7 +28,7 @@ import { default as ahmed} from "../assets/image-testimonial/ahmed.jpg";
         name:"Ahmed",
         title: "Head of Business group",
         message: "I had an incredible experience with this company. Their team is brilliant. and I'm amazed by how easy and effortless.",
-        color:"#FFF0F5",
+        color:"#ffff",
       },
       {
         id: 4,
@@ -36,7 +36,7 @@ import { default as ahmed} from "../assets/image-testimonial/ahmed.jpg";
         name:"Samuel",
         title: "Business expert",
         message: "I am extremely satisfied with the quality of their work. They are highly professional and completed the project ahead of schedule.",
-        color:"#D8C4B6",
+        color:"#FFF0F5",
       },
   
  
