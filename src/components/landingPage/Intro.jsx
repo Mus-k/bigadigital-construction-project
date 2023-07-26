@@ -8,7 +8,7 @@ const Intro = () => {
       <div className="landing-container">
         <h4 className="landingTitle">
           {" "}
-          Building a <spa className="better">Better</spa> Future Together
+          Building a <span className="better">Better</span> Future Together
         </h4>
         <p className="landingText">
           {" "}

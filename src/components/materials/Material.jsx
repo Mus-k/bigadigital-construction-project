@@ -29,7 +29,7 @@ const Material = () => {
       </div>
       <div className="material-nested">
         <div className="material-logo">
-          <i class="fa-solid fa-paintbrush"></i>
+          <i className="fa-solid fa-paintbrush"></i>
         </div>
         <h3 className="material-Title">Painting</h3>
         <p className="materialText">

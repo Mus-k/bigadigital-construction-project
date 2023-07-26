@@ -8,7 +8,7 @@ const TestiContent = ({ indexActive, slideData, previousSlide, nextSlide }) => {
  
         {slideData &&
           slideData.map((slide, index) => (
-            <div style={{backgroundColor:`${slide.color}`}}
+            <div key={index} style={{backgroundColor:`${slide.color}`}}
             className={index === indexActive ? "slideDiv aktive" : "inaktive"}
             >
         

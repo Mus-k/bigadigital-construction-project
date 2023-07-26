@@ -3,12 +3,11 @@ import "./IntroCarousel.css";
 import { motion } from "framer-motion";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-//import {default as firstSlide} from '../../assets/images/x-desktop-second.jpg'
 import SliderData from "../../api/SliderData";
 import CountUpFunc from "../count up/CountUp";
 const IntroSlider = () => {
   return (
-    <>
+    <div>
       <Carousel
         className="mainSlider"
         autoPlay={true}
@@ -29,10 +28,6 @@ const IntroSlider = () => {
           </div>
         )}
       >
-        {/* <div  className='carouselContainer'>
-        <img src={firstSlide}  alt='legend' width="100%"/>
-        <p className="legend">Legend 1</p>
-    </div> */}
         {SliderData.map((slide, index) => (
           <div key={index} className="slideContent">
             <img
@@ -63,14 +58,14 @@ const IntroSlider = () => {
                 {slide.description}
               </motion.p>
             </div>
-            <p className="countUpLegend">
+            <div className="countUpLegend">
               <CountUpFunc />
-            </p>
+            </div>
           </div>
         ))}
        
       </Carousel>
-    </>
+    </div>
   );
 };
 

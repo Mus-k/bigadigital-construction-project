@@ -1,11 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Home.css";
-//import Slides from "../components/slider/Slides";
 import Material from "../components/materials/Material";
 import Service from "../components/services/Service";
 import Mission from "../components/mission/Mission";
-//import CountUpFunc from "../components/count up/CountUp";
 import Truck from "../components/infinitive truck/Truck";
 import Gallery from "../components/gallery/Gallery";
 import Testimonial from "../components/testimonialCarousel/Testimonial";

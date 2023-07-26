@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   function menuOpen() {
     setOpen(!open);
-    console.log("clicked", open);
+    
   }
   useEffect(() => {
     const handleScroll = () => {

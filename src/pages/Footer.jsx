@@ -3,21 +3,39 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const [submit, setSubmit]=useState(false);
+  //const [submit, setSubmit] = useState(false);
+  const [input, setInput] = useState("");
+  const [invalid, setInvalid] = useState(false);
+
+function handleChange(e){
+  setInput(e.target.value)
+  if(e.target.value){
+    setInvalid(false)
+  }
+}
+  function submitFunc() {
+if(input==="")
+{
+setInvalid(true)
+} else {
+  setInput("")
+}
   
+  }
+
   return (
     <footer className="footerContainer">
       <div className="footer">
         <div className="grid-item1">
           <h3>
-            <Link to="" className="header">
+            <Link to="/" className="header">
               About us
             </Link>
           </h3>
           <p>
             With over decades of experience in the construction industry,{" "}
-            <span className="companyName">Construction co.</span> is a trusted name
-            known for delivering high-quality projects on time and within
+            <span className="companyName">Construction co.</span> is a trusted
+            name known for delivering high-quality projects on time and within
             budget.
           </p>
           <div className="social-right footerIcons">
@@ -38,7 +56,7 @@ const Footer = () => {
 
         <div className="grid-item2">
           <h3>
-            <Link to="" className="header">
+            <Link to="/" className="header">
               Services
             </Link>
           </h3>
@@ -49,7 +67,7 @@ const Footer = () => {
         </div>
         <div className="grid-item3">
           <h3>
-            <Link to="" className="header">
+            <Link to="/about" className="header">
               About
             </Link>
           </h3>
@@ -60,7 +78,7 @@ const Footer = () => {
         </div>
         <div className="grid-item4">
           <h3>
-            <Link to="" className="header">
+            <Link to="/blog" className="header">
               Resources
             </Link>
           </h3>
@@ -74,10 +92,15 @@ const Footer = () => {
           <div className="inputBtn">
             <input
               type="text"
+              value={input}
               className="subscribe"
               placeholder="Enter Your Email"
+              onChange={handleChange}
             />
-            <button className="subscribeBtn">Subscribe</button>
+            <button className="subscribeBtn" onClick={submitFunc}>
+              Subscribe
+            </button>
+            <p style={{color:"red"}}>{invalid? "required":""}</p>
           </div>
         </div>
       </div>
