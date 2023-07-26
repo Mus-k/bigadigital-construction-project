@@ -11,12 +11,11 @@ const Mission = () => {
         </div>
       </div>
       <div className="missionRight">
-        <h2 className="missionTitle">Welcome to Home Builder </h2>
-        <h2 className="rightTitle">We create and turn into reality </h2>
+        <h2 className="missionTitle">Welcome to Construction Co. </h2>
+        <h3 className="rightTitle">your trusted partner in construction and development projects. </h3>
         <p className="missionText">
           {" "}
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia
+          we believe that every project is an opportunity to create something remarkable.
         </p>
         <div className="accordionDisplay">
           <AccordionComponent />

@@ -1,7 +1,6 @@
 .counters {
-  padding: 1em 2em;
-  /* background: var(--nav-bg); */
-  
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
   color: var(--text-white);
   text-align: center;
 
@@ -11,46 +10,51 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3em 2em;
+  gap: 0.5em;
 }
 .counterText{
-  color:var(--nav-bg);
+  color:var(--text-white);
 }
 .counter {
   position: relative;
 }
 .countNumber{
-    font-size: 40px;
+    font-size: 20px;
     color: var(--text-yellow);
 }
 .counter:not(:last-child)::before {
   content: "";
-  background: var(--nav-bg);
+  background: var(--text-white);
   position: absolute;
   width: 2px;
   height: 3em;
   top: 50%;
   transform: translateY(-50%);
-  right: -1em;
+  right: -0.6em;
 }
 
+
 @media screen and (max-width: 900px) and (min-width: 502px) {
-  .counters > div {
-    grid-template-columns: 1fr 1fr;
+  .counters {
+    padding: 5px;
+
   }
-  .counter:nth-child(2)::before {
-    display: none;
+  .counterText{
+    color:var(--text-white);
+    font-size: 14px;
   }
+  .countNumber{
+    font-size: 16px;
+    color: var(--text-yellow);
+}
+ 
 }
 
 @media screen and (max-width: 502px) {
     .countNumber{
-        font-size: 23px;
+        font-size: 12px;
     }
-  .counters > div {
-    grid-template-columns: 1fr;
-    row-gap: 5em;
-  }
+
   .counter:not(:last-child)::before {
     width: 90%;
     height: 2px;
@@ -60,4 +64,43 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .counterText{
+    color:var(--text-white);
+    font-size: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 350px) {
+  .counters {
+    padding: 0px;
+
+  }
+  .countNumber{
+      font-size: 10px;
+  }
+
+.counter:not(:last-child)::before {
+  width: 90%;
+  height: 2px;
+  top: initial;
+  right: initial;
+  bottom: -3em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.counterText{
+  color:var(--text-white);
+  font-size: 8px;
+}
+}
+
+
+@media screen and (max-width: 240px) {
+  .counters {
+    padding: 0px;
+display: none;
+  }
+
 }

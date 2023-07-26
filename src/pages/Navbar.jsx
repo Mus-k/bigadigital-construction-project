@@ -27,7 +27,7 @@ export const Navbar = () => {
           <Link to="/">
             <div className="logo">
               <img src={logo} alt="logo" width="100%"/>
-            <span className="logo-span"> CityBuilder</span>
+            <span className="logo-span">C-co.</span>
             </div>
           </Link>
 
