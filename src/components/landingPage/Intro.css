@@ -1,5 +1,5 @@
 .landingPage {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
   background: url("../../assets/images/mobile-second.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@
   height: 100%;
   width: 100%;
   display: flex;
-  padding-top: 100px;
+  padding-top: 70px;
   flex-direction: column;
 }
 
