@@ -5,6 +5,7 @@ import Footer from '../Footer'
 import { motion } from "framer-motion";
 import {default as arrow} from "../../assets/icons/right-arrow.png"
 import { Helmet } from 'react-helmet-async';
+import ScrollToTopButton from '../../components/scrollTo/ScrollTop';
 export const ProjectRoute = () => {
   return (
     <>
@@ -29,6 +30,7 @@ export const ProjectRoute = () => {
         </div>
       </div>
       <Gallery/>
+      <ScrollToTopButton/>
       <Footer/>
      
     </motion.div>

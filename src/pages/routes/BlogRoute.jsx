@@ -5,6 +5,7 @@ import { Blog } from '../Blog'
 import {default as arrow} from "../../assets/icons/right-arrow.png"
 import Footer from '../Footer';
 import { Helmet } from "react-helmet-async";
+import ScrollToTopButton from "../../components/scrollTo/ScrollTop";
 export const BlogRoute = () => {
 
 
@@ -32,6 +33,7 @@ export const BlogRoute = () => {
       </div>
      
        <Blog/>
+       <ScrollToTopButton/>
       <Footer/>
     
      

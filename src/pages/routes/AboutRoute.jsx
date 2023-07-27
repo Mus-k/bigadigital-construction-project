@@ -7,6 +7,7 @@ import Testimonial from "../../components/testimonialCarousel/Testimonial";
 import Footer from "../Footer";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
+import ScrollToTopButton from "../../components/scrollTo/ScrollTop";
 export const AboutRoute = () => {
   return (
     <>
@@ -38,8 +39,9 @@ export const AboutRoute = () => {
 
         <Testimonial />
         <Gallery />
+        <ScrollToTopButton/>
         <Footer />
-        {/* <About/> */}
+       
       </motion.div>
     </>
   );

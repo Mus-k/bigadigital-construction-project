@@ -23,7 +23,6 @@ export const Navbar = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    
     });
   }
   return (
@@ -38,8 +37,16 @@ export const Navbar = () => {
           </Link>
 
           <ul className="desktopMenu">
-            <li onClick={scrollTop}>
-              <NavLink activeclassname="active" to="">
+            <li>
+              <NavLink
+                activeclassname="active"
+                to="/"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                delay={1000}
+              >
                 Home
               </NavLink>
             </li>
@@ -77,20 +84,49 @@ export const Navbar = () => {
       </header>
       <div className={`${open ? "mobileMenu active" : "mobileMenu"}`}>
         <ul className="menuUl">
-          <li onClick={()=>{menuOpen(); scrollTop()}}>
-            <Link to="">Home</Link>
+          <li onClick={menuOpen}>
+            <Link
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              delay={1000}
+            >
+              Home
+            </Link>
           </li>
-          <li onClick={()=>{menuOpen(); scrollTop()}}>
+          <li
+            onClick={() => {
+              menuOpen();
+              scrollTop();
+            }}
+          >
             <Link to="/about">About</Link>
           </li>
 
-          <li onClick={()=>{menuOpen(); scrollTop()}}>
+          <li
+            onClick={() => {
+              menuOpen();
+              scrollTop();
+            }}
+          >
             <Link to="project">Project</Link>
           </li>
-          <li onClick={()=>{menuOpen(); scrollTop()}}>
+          <li
+            onClick={() => {
+              menuOpen();
+              scrollTop();
+            }}
+          >
             <Link to="blog">Blog</Link>
           </li>
-          <li onClick={()=>{menuOpen(); scrollTop()}}>
+          <li
+            onClick={() => {
+              menuOpen();
+              scrollTop();
+            }}
+          >
             <Link to="contact">Contact</Link>
           </li>
         </ul>

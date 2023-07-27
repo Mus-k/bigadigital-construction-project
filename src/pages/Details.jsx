@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import NotFound from "../components/notFound/NotFound";
 import detailsData from "../api/BlogDetailsData";
+import ScrollToTopButton from "../components/scrollTo/ScrollTop";
 const Details = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
@@ -57,6 +58,7 @@ const Details = () => {
           <NotFound />
         )}
       </div>
+      <ScrollToTopButton/>
       {/* footer */}
       <footer className="footerContainer">
         <div className="footer">

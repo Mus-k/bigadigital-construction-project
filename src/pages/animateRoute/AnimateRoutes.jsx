@@ -14,6 +14,7 @@ import NotFound from "../../components/notFound/NotFound";
 export default function AnimateRoute() {
   const location = useLocation();
 
+
   return (
     <>
       <div className="social">

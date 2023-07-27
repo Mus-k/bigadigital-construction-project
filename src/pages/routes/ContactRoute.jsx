@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Footer from "../Footer";
 import {default as arrow} from "../../assets/icons/right-arrow.png"
 import { Helmet } from "react-helmet-async";
+import ScrollToTopButton from "../../components/scrollTo/ScrollTop";
 export const ContactRoute = () => {
   return (
     <>
@@ -29,6 +30,7 @@ export const ContactRoute = () => {
         </div>
       </div>
       <Contact />
+      <ScrollToTopButton/>
      <Footer />
     </motion.div>
     </>

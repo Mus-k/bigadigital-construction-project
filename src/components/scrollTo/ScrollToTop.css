@@ -1,0 +1,20 @@
+/* ScrollToTopButton.css */
+
+.topbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: var(--text-yellow);
+    color:var(--nav-bg);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .topbutton:hover {
+    background-color:var(--nav-bg); 
+  }
+  
