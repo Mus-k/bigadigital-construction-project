@@ -38,15 +38,7 @@ export const Navbar = () => {
 
           <ul className="desktopMenu">
             <li>
-              <NavLink
-                activeclassname="active"
-                to="/"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                delay={1000}
-              >
+              <NavLink activeclassname="active" to="/">
                 Home
               </NavLink>
             </li>
@@ -85,16 +77,7 @@ export const Navbar = () => {
       <div className={`${open ? "mobileMenu active" : "mobileMenu"}`}>
         <ul className="menuUl">
           <li onClick={menuOpen}>
-            <Link
-              to="/"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              delay={1000}
-            >
-              Home
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li
             onClick={() => {

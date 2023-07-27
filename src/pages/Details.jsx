@@ -14,7 +14,7 @@ const Details = () => {
 
     if (foundBlog) {
       setBlog(foundBlog);
-      console.log(foundBlog);
+    
     }
   }, [id]);
   return (
