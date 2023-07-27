@@ -23,9 +23,11 @@
 }
 .expertName {
   color: var(--text-yellow);
+  text-align: center;
 }
 .expertTitle {
   color: var(--text-white);
+  text-align: center;
 }
 .expertCard {
   position: relative;
