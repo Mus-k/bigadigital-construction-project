@@ -13,9 +13,16 @@ import { Contact } from "./Contact";
 import Expert from "../components/expert/Expert";
 import IntroSlider from "../components/introSlider/IntroSlider";
 import Intro from "../components/landingPage/Intro";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
+    <>
+    <Helmet>
+      <title>home</title>
+      <meta name="description" content="welcome to our home page" />
+      <link rel="canonical" href="/home" />
+    </Helmet>
     <motion.div
       className="home"
       initial={{ opacity: 0 }}
@@ -47,6 +54,7 @@ const Home = () => {
       <Contact />
       <Footer />
     </motion.div>
+    </>
   );
 };
 

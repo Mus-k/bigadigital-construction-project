@@ -4,8 +4,15 @@ import './Routes.css'
 import { motion } from "framer-motion";
 import Footer from "../Footer";
 import {default as arrow} from "../../assets/icons/right-arrow.png"
+import { Helmet } from "react-helmet-async";
 export const ContactRoute = () => {
   return (
+    <>
+    <Helmet>
+      <title>contact us</title>
+      <meta name="description" content="contact us for more details" />
+      <link rel="canonical" href="/contact" />
+    </Helmet>
     <motion.div
     className="bloRoute"
     initial={{ opacity: 0 }}
@@ -24,5 +31,6 @@ export const ContactRoute = () => {
       <Contact />
      <Footer />
     </motion.div>
+    </>
   );
 };

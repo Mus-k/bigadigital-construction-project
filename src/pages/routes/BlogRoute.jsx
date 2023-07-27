@@ -4,10 +4,17 @@ import { motion } from "framer-motion";
 import { Blog } from '../Blog'
 import {default as arrow} from "../../assets/icons/right-arrow.png"
 import Footer from '../Footer';
+import { Helmet } from "react-helmet-async";
 export const BlogRoute = () => {
 
 
   return (
+    <>
+    <Helmet>
+      <title>blog</title>
+      <meta name="description" content="view our latest projects" />
+      <link rel="canonical" href="/blog" />
+    </Helmet>
     <motion.div
     className="bloRoute"
     initial={{ opacity: 0 }}
@@ -29,5 +36,6 @@ export const BlogRoute = () => {
     
      
     </motion.div>
+    </>
   )
 }

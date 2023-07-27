@@ -4,8 +4,15 @@ import Gallery from '../../components/gallery/Gallery'
 import Footer from '../Footer'
 import { motion } from "framer-motion";
 import {default as arrow} from "../../assets/icons/right-arrow.png"
+import { Helmet } from 'react-helmet-async';
 export const ProjectRoute = () => {
   return (
+    <>
+    <Helmet>
+      <title>projects</title>
+      <meta name="description" content="view some of our projects" />
+      <link rel="canonical" href="/projects" />
+    </Helmet>
     <motion.div
     className="bloRoute"
     initial={{ opacity: 0 }}
@@ -25,5 +32,6 @@ export const ProjectRoute = () => {
       <Footer/>
      
     </motion.div>
+    </>
   )
 }
