@@ -18,7 +18,7 @@
   padding-bottom: 80px;
   flex-direction: column;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .landingTitle {
@@ -32,7 +32,7 @@
   font-size: 20px;
   padding: 10px 0px;
   color: #ffff;
- line-height: 26px;
+  line-height: 26px;
   font-family: "Robot" sans-serif;
 }
 
@@ -54,11 +54,10 @@
   color: #ffff;
 }
 
-
-.better{
-    position: relative;
-    z-index: 10;  
-    margin: 0px 6px;
+.better {
+  position: relative;
+  z-index: 10;
+  margin: 0px 6px;
 }
 .highlight {
   color: var(--text-yellow);
@@ -67,7 +66,7 @@
   z-index: 10;
   margin-left: 6px;
 }
- .highlight::after {
+.highlight::after {
   display: block;
   content: "";
   position: absolute;
@@ -82,20 +81,19 @@
   background: var(--nav-bg);
 }
 
-
-.better::after{
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.7;
-    transform: scale(1.07, 1.05) skewX(-15deg);
-    background: var(--text-yellow);
-  }
+.better::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background: var(--text-yellow);
+}
 @media screen and (max-width: 380px) {
   .landing-container {
     padding-left: 50px;
@@ -103,10 +101,10 @@
     height: 100%;
     width: 100%;
     display: flex;
-  padding-bottom: 80px;
-  flex-direction: column;
-  justify-content: center;
-  align-items:flex-start;
+    padding-bottom: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
   .landingTitle {
     color: #ffff;
@@ -117,24 +115,24 @@
   }
 }
 
-@media screen  and (max-width:358px){
-    .landingTitle {
-        color: #ffff;
-        font-size: 20px;
-        padding: 10px 0px;
-        font-weight: 500px;
-        line-height: 29px;
-      }
-      
-.landingText {
+@media screen and (max-width: 358px) {
+  .landingTitle {
+    color: #ffff;
+    font-size: 20px;
+    padding: 10px 0px;
+    font-weight: 500px;
+    line-height: 29px;
+  }
+
+  .landingText {
     font-size: 15px;
     padding: 10px 0px;
     color: #ffff;
-   line-height: 26px;
+    line-height: 26px;
     font-family: "Robot" sans-serif;
   }
-  
-.landingBtn {
+
+  .landingBtn {
     padding: 10px 10px;
     margin-top: 10px;
     outline: none;
@@ -143,6 +141,6 @@
     width: 110px;
   }
   .landingPage {
-padding-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
