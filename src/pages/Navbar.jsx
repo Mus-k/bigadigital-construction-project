@@ -8,46 +8,60 @@ export const Navbar = () => {
 
   function menuOpen() {
     setOpen(!open);
-    
   }
   useEffect(() => {
     const handleScroll = () => {
       setSticky(window.scrollY > 200);
-     
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  function scrollTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <div>
       <header className={`${sticky ? "sticky" : ""}`}>
         <nav className="Navcontainer">
           <Link to="/">
-            <div className="logo">
-              <img src={logo} alt="logo" width="100%"/>
-            <span className="logo-span">C-co.</span>
+            <div className="logo" onClick={scrollTop}>
+              <img src={logo} alt="logo" width="100%" />
+              <span className="logo-span">C-co.</span>
             </div>
           </Link>
 
           <ul className="desktopMenu">
-            <li>
-              <NavLink activeclassname="active" to="">Home</NavLink>
-           
+            <li onClick={scrollTop}>
+              <NavLink activeclassname="active" to="">
+                Home
+              </NavLink>
             </li>
-            <li>
-            <NavLink activeclassname="active" to="/about">About</NavLink>
+            <li onClick={scrollTop}>
+              <NavLink activeclassname="active" to="/about">
+                About
+              </NavLink>
             </li>
-           
-            <li>
-            <NavLink activeclassname="active" to="project">Project</NavLink>
+
+            <li onClick={scrollTop}>
+              <NavLink activeclassname="active" to="project">
+                Project
+              </NavLink>
             </li>
-            <li>
-            <NavLink activeclassname="active" to="blog">Blog</NavLink>
+            <li onClick={scrollTop}>
+              <NavLink activeclassname="active" to="blog">
+                Blog
+              </NavLink>
             </li>
-            <li>
-            <NavLink activeclassname="active" to="contact">Contact</NavLink>
+            <li onClick={scrollTop}>
+              <NavLink activeclassname="active" to="contact">
+                Contact
+              </NavLink>
             </li>
           </ul>
           <div
@@ -62,20 +76,20 @@ export const Navbar = () => {
       </header>
       <div className={`${open ? "mobileMenu active" : "mobileMenu"}`}>
         <ul className="menuUl">
-          <li onClick={menuOpen}>
+          <li onClick={()=>{menuOpen(); scrollTop()}}>
             <Link to="">Home</Link>
           </li>
-          <li onClick={menuOpen}>
+          <li onClick={()=>{menuOpen(); scrollTop()}}>
             <Link to="/about">About</Link>
           </li>
-       
-          <li onClick={menuOpen}>
+
+          <li onClick={()=>{menuOpen(); scrollTop()}}>
             <Link to="project">Project</Link>
           </li>
-          <li onClick={menuOpen}>
+          <li onClick={()=>{menuOpen(); scrollTop()}}>
             <Link to="blog">Blog</Link>
           </li>
-          <li onClick={menuOpen}>
+          <li onClick={()=>{menuOpen(); scrollTop()}}>
             <Link to="contact">Contact</Link>
           </li>
         </ul>
