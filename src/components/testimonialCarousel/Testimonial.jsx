@@ -32,29 +32,7 @@ const Testimonial = () => {
           previousSlide={previousSlide}
           nextSlide={nextSlide}
         />
-        {/* <div className="testi-right">
-         
-          <div className="btns">
-            <button className="btnLeft">left</button>
-            <button className="btnRight">right</button>
-          </div>
-          <div className="slideDiv">
-            <img
-              src={profile}
-              alt="profile"
-              className="profileImage"
-              width="100%"
-            />
-            <p className="profileName">Musah akamara</p>
-            <p className="company">Ceo, of company</p>
-            <div className="line"> </div>
-            <p className="slideText">
-              I couldn't be happier with the service I received. They are
-              reliable and attentive to detail, Their customer support is
-              wonderful. They went above and beyond to help me.
-            </p>
-          </div>
-        </div> */}
+      
       </div>
     </section>
   );
