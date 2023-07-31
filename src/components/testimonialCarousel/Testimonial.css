@@ -67,7 +67,7 @@
   right: 0;
   bottom: 0;
   padding: 20px;
-width: 60%;
+  width: 60%;
   overflow: hidden;
 }
 .btns {
@@ -100,20 +100,13 @@ width: 60%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
- 
 }
 .aktive {
- 
   display: flex;
- 
 }
 .inaktive {
-  
   display: none;
- 
 }
-
 
 .profileName {
   padding-top: 0;
@@ -199,5 +192,3 @@ width: 60%;
     width: 100%;
   }
 }
-
-
