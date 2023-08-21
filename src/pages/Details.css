@@ -1,7 +1,6 @@
 
 
 .details-container{
-    /* height:calc(100vh - 103px); */
     background-color: rgb(250, 247, 247);
     width: 100%;
     display: flex;

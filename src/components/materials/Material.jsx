@@ -27,8 +27,12 @@ const Material = () => {
         </div>
         <h3 className="material-Title">House Renovation</h3>
         <p className="materialText">
-        Transform your living space into a reflection of your dreams with our house renovation expertise. Whether it's revamping a single room or giving your entire home a fresh look, our team of experienced professionals ensures that every detail is attended to. From concept to execution, we breathe new life into your space while maintaining its unique character.
-
+          Transform your living space into a reflection of your dreams with our
+          house renovation expertise. Whether it's revamping a single room or
+          giving your entire home a fresh look, our team of experienced
+          professionals ensures that every detail is attended to. From concept
+          to execution, we breathe new life into your space while maintaining
+          its unique character.
         </p>
       </div>
       <div className="material-nested">
@@ -37,8 +41,12 @@ const Material = () => {
         </div>
         <h3 className="material-Title">Painting</h3>
         <p className="materialText">
-        Add vibrancy and personality to your property with our expert painting services. Our skilled painters blend creativity with precision to deliver stunning finishes that enhance the aesthetics of your space. Whether it's interior or exterior painting, our meticulous approach guarantees seamless and lasting results that leave a lasting impression.
-
+          Add vibrancy and personality to your property with our expert painting
+          services. Our skilled painters blend creativity with precision to
+          deliver stunning finishes that enhance the aesthetics of your space.
+          Whether it's interior or exterior painting, our meticulous approach
+          guarantees seamless and lasting results that leave a lasting
+          impression.
         </p>
       </div>
       <div className="material-nested">
@@ -47,7 +55,12 @@ const Material = () => {
         </div>
         <h3 className="material-Title">Architecture Design</h3>
         <p className="materialText">
-        Turn your concepts into captivating structures with our innovative architecture design services. Our team of architects translates your aspirations into visually appealing and functional designs. With an emphasis on aesthetics, functionality, and sustainability, we create architectural marvels that not only stand out but also harmonize seamlessly with their surroundings.
+          Turn your concepts into captivating structures with our innovative
+          architecture design services. Our team of architects translates your
+          aspirations into visually appealing and functional designs. With an
+          emphasis on aesthetics, functionality, and sustainability, we create
+          architectural marvels that not only stand out but also harmonize
+          seamlessly with their surroundings.
         </p>
       </div>
     </div>

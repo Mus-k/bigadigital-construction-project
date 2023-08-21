@@ -8,7 +8,6 @@ header {
   padding: 0px 100px;
   justify-content: center;
   z-index: 999;
-  /* overflow: hidden; */
 }
 
 header.sticky {
@@ -127,7 +126,6 @@ a {
   display: flex;
   z-index: 200;
   background-color: rgb(33, 32, 34);
-  /* background-color: rgb(47, 46, 49); */
   padding-top: 140px;
 
   transition: all 0.4s ease-in-out;
