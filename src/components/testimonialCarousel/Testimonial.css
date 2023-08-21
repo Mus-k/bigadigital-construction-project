@@ -10,7 +10,7 @@
 .testimonial {
   display: flex;
   justify-content: flex-start;
-  width: 1150px; /* Adjust the carousel width as needed */
+  width: 1150px; 
   margin: 0 auto;
   position: relative;
 }
@@ -163,7 +163,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 1150px; /* Adjust the carousel width as needed */
+    width: 1150px; 
     margin: 0 auto;
     position: relative;
   }
