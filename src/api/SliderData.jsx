@@ -32,31 +32,8 @@ const SliderData = [
     img2: thirdlarge,
   },
 
-  {
-    id: 4,
-    title: "Welcome to Construction Co.",
-    description:
-      "We are a leading construction company committed to excellence.",
 
-    img1: secondMobile,
-    img2: secondlarge,
-  },
-  {
-    id: 5,
-    title: "Welcome to Construction Co.",
-    description:
-      "At Construction Co., we take pride in constructing your dreams into reality.",
-    img1: firstMobile,
-    img2: firstlarge,
-  },
-  {
-    id: 6,
-    title: "Building a Better Future Together",
-    description:
-      "Welcome to Construction Co., where we believe in creating exceptional spaces that stand the test of time.",
-    img1: thirdMobile,
-    img2: thirdlarge,
-  },
+ 
 ];
 
 export default SliderData;
