@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: calc(100vh - 70px);
+  height: calc(100dvh - 70px);
   width: 100%;
 }
 
